@@ -1,0 +1,162 @@
+1.
+
+l=int(input("enter the length "))
+b=int(input("enter the breath "))
+Area=l*b
+Perimeter=2*(l+b)
+print("area of the rectangle",Area)
+print("Perimeter of the rectangle",Perimeter)
+
+output:
+enter the length 10
+enter the breath 35
+area of the rectangle 350
+Perimeter of the rectangle 90
+
+2.
+
+name=input("enter the name ")
+sal=int(input("enter the salary "))
+print("Name",name)
+print("Annual income is: ",sal*12)
+if(sal<150000):
+  income_tax=sal*0
+  print("tax to be paid",income_tax)
+elif(sal >15000 and sal<300000):
+  income_tax=(sal/100)*20
+  print("tax to be paid",income_tax)
+elif(sal>300000):
+  income_tax=(sal/100)*30
+  print("tax to be paid",income_tax)
+
+output:
+enter the name annapoornima
+enter the salary 15000
+Name annapoornima
+Annual income is:  180000
+tax to be paid 0
+
+3.
+
+t1=input("enter the item1 ")
+t2=input("enter the item2 ")
+t3=input("enter the item3 ")
+q1=int(input("quantity of  the item 1 "))
+q2=int(input("quantity of the item 2 "))
+q3=int(input("quantity of  the item 3 "))
+r1=int(input("enter the rate of the item 1 "))
+r2=int(input("enter the rate of the item 2 "))
+r3=int(input("enter the rate of the item 3 "))
+print("item 1",t1)
+print("item 2",t2)
+print("item 3",t3)
+print("quantity 1",q1)
+print("quantity 2",q2)
+print("quantity 3 ",q3)
+print("rate 1",r1)
+print("rate 2",r2)
+print("rate 3",r3)
+amnt=r1+r2+r3
+if(amnt>2000):
+  d=amnt*0.20
+  print("discount",d)
+elif(amnt>1500 )and(amnt <1999):
+  d=amnt*0.15
+  print("discount",d)
+elif(amnt>1000)and(amnt<1499):
+  d=amnt*0.08
+  print("discount",d)
+final_amnt=amnt-d
+print("total sales amount",amnt)
+print(final_amnt, "to be paid")
+
+output:
+enter the item1 bags
+enter the item2 books
+enter the item3 shoes
+quantity of  the item 1 2
+quantity of the item 2 3
+quantity of  the item 3 4
+enter the rate of the item 1 500
+enter the rate of the item 2 1500
+enter the rate of the item 3 500
+item 1 bags
+item 2 books
+item 3 shoes
+quantity 1 2
+quantity 2 3
+quantity 3  4
+rate 1 500
+rate 2 1500
+rate 3 500
+discount 500.0
+total sales amount 2500
+2000.0 to be paid
+
+4.
+X1=(11+31+23+8+7+5)/((1-(1/2)-(1/20)))
+X2=(((10*8)+8-((7//5)%(5**4)))&3)|(2<<1)
+print(X1)
+print(X2)
+
+output:
+188.88888888888889
+7
+
+
+5.
+Name=input("Enter the Name")
+m1=int(input("enter the mark 1"))
+m2=int(input("enter the mark 2"))
+m3=int(input("enter the mark 3"))
+total=m1+m2+m3
+avg=total/3
+print("Total Marks ",total)
+print("Average Marks",avg)
+if(avg>80):
+  grade="class I"
+elif(avg>=60) and(avg<=80):
+  grade="Class II"
+elif(avg>40)and(avg<60):
+  grade="Pass Class"
+else:
+  grade="Fail"
+print("“Congratulations",Name, "you secured a total of ",total
+, "and Your class is ",grade)
+
+output:
+Enter the Nameannapoornima
+enter the mark 178
+enter the mark 299
+enter the mark 370
+Total Marks  247
+Average Marks 82.33333333333333
+“Congratulations annapoornima you secured a total of  247 and Your class is  class I
+
+6.
+
+num=int(input("Enter the Number "))
+print("Ascii Number is",ascii(num))
+if(num>0):
+  print( num, "Positive")
+elif(num==0):
+  print(num ,"Zero")
+else:
+  print(num ,"Negative")
+if(num %2==0):
+  print( num ," Even")
+else:
+  print(num ,"Odd")
+if(num>65)and(num<90):
+  print(num ,"Its Upper")
+elif(num>95)and(num<122):
+  print(num,"Its Lower")
+else:
+  print(num," Its digits")
+
+output:
+Enter the Number 68
+Ascii Number is 68
+68 Positive
+68  Even
+68 Its Upper
